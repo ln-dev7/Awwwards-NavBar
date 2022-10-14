@@ -64,6 +64,83 @@ li {
   }
 }
 
+.float {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  svg {
+    width: 25px;
+    cursor: pointer;
+  }
+  &-container {
+    width: 497px;
+    height: 72px;
+    max-width: 95%;
+    background: rgba(34, 34, 34, 0.8);
+    border-radius: 12px;
+    padding: 6px;
+  }
+  &-nav {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 12px;
+    height: 100%;
+  }
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 5px;
+    background: #222;
+    padding: 0 20px;
+    border-radius: 12px;
+    span {
+      display: block;
+    }
+  }
+  &-items {
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: 100%;
+    border-radius: 9px;
+    background: #3e3e3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 6px;
+
+    li {
+      border-radius: 6px;
+      border: 1px solid #4e4e4e;
+      color: #d3d3d3;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 6px;
+      font-size: 14px;
+      cursor: pointer;
+
+      &.active {
+        background: #d3d3d3;
+        color: #4e4e4e;
+      }
+
+      &:hover {
+        
+      }
+    }
+  }
+}
+
 .menu {
   position: absolute;
   top: 0;
@@ -147,8 +224,8 @@ li {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform .3s ease-out;
-        &:hover{
+        transition: transform 0.3s ease-out;
+        &:hover {
           transform: scale(1.2);
         }
       }
@@ -156,7 +233,7 @@ li {
     .card-body {
       padding: 1rem;
       &__text {
-        h3{
+        h3 {
           font-weight: 600;
         }
         div {
@@ -164,7 +241,7 @@ li {
           align-items: center;
           justify-content: space-between;
           margin: 5px 0;
-          h5{
+          h5 {
             font-size: 15px;
             font-weight: 400;
           }
@@ -197,13 +274,13 @@ li {
             border: none;
             color: #fff;
           }
-          .btn-html{
+          .btn-html {
             background: #ff4e4e;
           }
-          .btn-css{
-            background: #8154EF;
+          .btn-css {
+            background: #8154ef;
           }
-          .btn-js{
+          .btn-js {
             background: #f9a825;
           }
         }
